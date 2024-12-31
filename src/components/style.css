@@ -1,0 +1,175 @@
+/* style.css */
+
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.input-box {
+  width: 100%; /* Make input box full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.toggle-visibility {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #b3b2b2;
+  padding: 0;
+}
+
+.toggle-visibility svg {
+  width: 15px;
+  height: 15px;
+}
+
+.friend-card {
+  display: flex;
+  gap: 0.5rem;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  background-color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: 1px solid rgb(208, 208, 208);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.friend-profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.friend-info {
+  flex: 3;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+.friend-info p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.lastseen {
+  flex: 1;
+}
+
+.friend-card p {
+  padding: 0;
+  margin: 0;
+}
+
+.message {
+  padding: 0 0.5rem;
+  border-radius: 24px;
+  display: flex;
+}
+
+.sent {
+  justify-content: end;
+}
+
+.received {
+  justify-content: start;
+}
+
+.single-message {
+  background-color: rgb(247, 235, 255);
+  width: max-content;
+  padding: 0rem 1rem;
+  max-width: 50%;
+  /* width: 50%; */
+}
+
+.message-sent {
+  border-radius: 2rem 2rem 0rem 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.068) 0px -2px 6px 0px inset;
+}
+
+.message-received {
+  background-color: rgb(211, 145, 254);
+  color: white;
+  border-radius: 2rem 2rem 2rem 0rem;
+  box-shadow: rgba(94, 94, 149, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.137) 0px 18px 36px -18px inset;
+}
+
+.friend-request-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 10px;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+}
+
+.friend-request-card p {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.friend-request-card .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.friend-request-card button {
+  background-color: var(--primary-color) !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.friend-request-card .profile-name {
+  display: flex;
+  gap: 1rem;
+}
+
+.left-sidebar .user-search-box {
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
